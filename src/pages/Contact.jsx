@@ -62,7 +62,7 @@ export default function Contact() {
                 
                 <div className="contact-method">
                   <h3>🌐 Portfolio</h3>
-                  <a href="https://mubeen.dev" target="_blank" rel="noopener noreferrer">
+                  <a href="https://abdul-mubeen-git.github.io/portFolio/" target="_blank" rel="noopener noreferrer">
                     mubeen.dev
                   </a>
                 </div>

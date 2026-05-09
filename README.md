@@ -52,7 +52,7 @@ A personal portfolio built with **React + Vite**, featuring a terminal-style UI,
 ├── Styling       → Vanilla CSS (custom properties, keyframe animations)
 ├── Animations    → CSS clip-path, skewX, opacity transitions
 ├── Fonts         → Google Fonts (Syne / Space Grotesk)
-└── Deployment    → (update soon..)
+└── Deployment    → Live Demo[https://abdul-mubeen-git.github.io/portFolio/]
 ```
 
 ---
