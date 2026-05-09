@@ -52,7 +52,7 @@ A personal portfolio built with **React + Vite**, featuring a terminal-style UI,
 ├── Styling       → Vanilla CSS (custom properties, keyframe animations)
 ├── Animations    → CSS clip-path, skewX, opacity transitions
 ├── Fonts         → Google Fonts (Syne / Space Grotesk)
-└── Deployment    → (Vercel / Netlify — update as needed)
+└── Deployment    → (update soon..)
 ```
 
 ---
