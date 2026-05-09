@@ -1,16 +1,166 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- Banner -->
+```
+██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗
+██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗
+██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║   ██║██║     ██║██║   ██║
+██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║██║     ██║██║   ██║
+██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝
+╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝
+```
 
-Currently, two official plugins are available:
+### ❝ building things that matter »
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-## React Compiler
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-000000?style=for-the-badge)](https://mubeen.dev)
+[![GitHub Stars](https://img.shields.io/github/stars/mubeen/portfolio?style=for-the-badge&color=ff2d78)](https://github.com/mubeen/portfolio/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/mubeen/portfolio?style=for-the-badge&color=00f0ff)](https://github.com/mubeen/portfolio/commits/main)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✦ Overview
+
+A personal portfolio built with **React + Vite**, featuring a terminal-style UI, animated orbs background, and a custom glitch effect on the hero heading. Designed to be fast, minimal, and memorable.
+
+---
+
+## ✦ Features
+
+| Feature | Description |
+|---|---|
+| 🎨 **Glitch Hero** | Animated symbol toggle with RGB chromatic aberration slices — toggle, chaos & pulse modes |
+| 💻 **Interactive Terminal** | Fake terminal component simulating shell output for a dev-centric aesthetic |
+| 🔮 **Orbs Background** | Floating animated orbs that react to the page layout |
+| ⚡ **Vite Powered** | Lightning-fast dev server and optimized production builds |
+| 📱 **Responsive** | Fluid layout across all screen sizes |
+| 🌑 **Dark by Default** | Deep dark theme with neon accents (`#ff2d78` pink / `#00f0ff` cyan) |
+
+---
+
+## ✦ Tech Stack
+
+```
+├── Framework     → React 18
+├── Build Tool    → Vite
+├── Styling       → Vanilla CSS (custom properties, keyframe animations)
+├── Animations    → CSS clip-path, skewX, opacity transitions
+├── Fonts         → Google Fonts (Syne / Space Grotesk)
+└── Deployment    → (Vercel / Netlify — update as needed)
+```
+
+---
+
+## ✦ Getting Started
+
+### Prerequisites
+
+- Node.js `>=18.x`
+- npm or yarn
+
+### Installation
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/mubeen/portfolio.git
+
+# 2. Move into the directory
+cd portfolio
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the dev server
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+Output goes to `dist/`. Preview the production build with:
+
+```bash
+npm run preview
+```
+
+---
+
+## ✦ Project Structure
+
+```
+portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── background/
+│   │   │   └── Orbs.jsx          # Animated orb background
+│   │   ├── layout/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Footer.jsx
+│   │   └── terminal/
+│   │       └── Terminal.jsx      # Interactive terminal UI
+│   ├── pages/
+│   │   └── Home.jsx              # Hero + glitch effect
+│   ├── styles/
+│   │   └── globals.css
+│   └── main.jsx
+├── index.html
+├── vite.config.js
+└── package.json
+```
+
+---
+
+## ✦ Glitch Effect
+
+The hero heading uses a three-mode glitch system:
+
+```jsx
+// Modes: 'toggle' | 'chaos' | 'pulse' | 'stop'
+const [mode, setMode]     = useState('chaos')
+const [baseMs, setBaseMs] = useState(800)      // interval between triggers
+const BURST_MS            = 120                // how long each glitch lasts
+```
+
+- **toggle** — `❝` and `»` swap every interval with RGB slice distortion
+- **chaos** — random symbol state with probabilistic glitch bursts
+- **pulse** — rhythmic sequence that builds and crashes
+- **stop** — resets to default state, clears all active glitch classes
+
+CSS drives the effect via `clip-path` + `skewX` keyframes on `::before` / `::after` pseudo-elements.
+
+---
+
+## ✦ Contact
+
+<div align="center">
+
+| Platform | Link |
+|---|---|
+| 🌐 Website | [mubeen.dev](https://mubeen.dev) |
+| 💼 LinkedIn | [linkedin.com/in/mubeen](https://linkedin.com/in/mubeen) |
+| 🐙 GitHub | [github.com/mubeen](https://github.com/mubeen) |
+| 📧 Email | mubeen@email.com |
+
+</div>
+
+---
+
+<div align="center">
+
+made with ❝ and » by **Mubeen**
+
+⭐ Star this repo if you found it useful
+
+</div>
