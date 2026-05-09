@@ -16,19 +16,10 @@ export default function Qualification() {
             <h2 className="qual-section-title">Education</h2>
             <div className="qual-item">
               <h3>Bachelor of Computer Science</h3>
-              <p className="qual-institution">University of Technology</p>
+              <p className="qual-institution">Rajiv Gandhi University of Knowledge and tecnologies.</p>
               <p className="qual-date">2015 - 2019</p>
               <p className="qual-details">
-                GPA: 3.8/4.0 • Dean's List • Computer Science Specialization
-              </p>
-            </div>
-            
-            <div className="qual-item">
-              <h3>Full Stack Web Development</h3>
-              <p className="qual-institution">Coding Bootcamp</p>
-              <p className="qual-date">2019</p>
-              <p className="qual-details">
-                Intensive 6-month program covering modern web technologies
+                GPA: 7.8/10.0 • Computer Science and Engineering
               </p>
             </div>
           </div>
