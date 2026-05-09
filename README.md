@@ -149,9 +149,9 @@ CSS drives the effect via `clip-path` + `skewX` keyframes on `::before` / `::aft
 | Platform | Link |
 |---|---|
 | 🌐 Website | [mubeen.dev](https://mubeen.dev) |
-| 💼 LinkedIn | [linkedin.com/in/mubeen](https://linkedin.com/in/mubeen) |
-| 🐙 GitHub | [github.com/mubeen](https://github.com/mubeen) |
-| 📧 Email | mubeen@email.com |
+| 💼 LinkedIn | [linkedin.com/in/mubeen](https://www.linkedin.com/in/dev-mubeen-abdul/) |
+| 🐙 GitHub | [github.com/mubeen](https://github.com/Abdul-Mubeen-git) |
+| 📧 Email | mubeenabdul1999@gmail.com |
 
 </div>
 
